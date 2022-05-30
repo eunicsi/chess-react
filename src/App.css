@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+}
+
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-step {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: rgb(100, 100, 100);
+}
+
+.lost div img {
+    height: 20px;
+}
+
+.cell img {
+    width: 48px;
+    height: 48px;
+}
+
+.black {
+    background-color: rgb(61, 61, 61);
+}
+
+.white {
+    background-color: rgb(192, 192, 192);
+}
+
+.selected {
+    background-color: aqua;
+}
+
+.available {
+    height: 12px;
+    width: 12px;
+    border: solid 1px brown;
+    border-radius: 50%;
+}
+
+.timer {
+    color: white;
+    margin: 20px;
+}
+
+.timer button {
+    width: 100px;
+    height: 20px;
+}
